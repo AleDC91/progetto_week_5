@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Netflix clone, esercizio settimana 5" />
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="">
+ 
+
+    <header class="bg-netflix-bg-color py-2 bg-netflix-bg-color">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-netflix-bg-color  p-0">
+        <div class="container-fluid bg-netflix-bg-color">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/netflix_logo.png"
+              class="img-fluid"
+              alt="netflix logo"
+            />
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active text-white" aria-current="page">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right-nav-btns d-flex align-items-center position-absolute">
+            <div class="search-nav">
+                <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </a>
+            </div>
+            <div class="kids text-white fs-7">
+                <a href="#">KIDS</a>
+                
+            </div>
+            <div class="bell" >
+                <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                  </svg>
+                </a>
+            </div>
+            <div class="user-avatar">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle p-0 rounded-0 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="img-fluid" src="assets/img/avatar.png" alt="avatar" />
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end bg-netflix-bg-color border border-white border-opacity-50 rounded-0">
+                        <li>
+                          <div class="drop-header d-flex">
+                          <div class="user mx-2">
+                            <div class="user-avatar">
+                              <img
+                                class="img-fluid rounded-circle"
+                                src="assets/img/avatar.png"
+                                alt="avatar user"
+                              />
+                            </div>
+                          </div>
+                          <div class="user-info fs-7  px-1 pe-2">
+                            <div class="name text-white">
+                              Netflix User
+                            </div>
+                            <div class="email text-white opacity-50 ">
+                              user@examples.com
+                            </div>
+                          </div>
+                        </div>
+                        </li>
+                        <li><hr class="dropdown-divider bg-white opacity-50"></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-star"></i>Subscription</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i>Settings</a></li>
+                        <li><hr class="dropdown-divider bg-white opacity-50"></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left"></i>Sign Out</a></li>
+        
+        
+        
+                      </ul>
+                </div>
+              
+            </div>
+
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+<main class="container-md">
+
+<h1 class="mt-5 mb-4">
+    Account
+</h1>
+
+<div class="membership row border-top border-bottom pt-3">
+    <div class="col-md-3">
+        <h5 class="opacity-50">MEMBERSHIP & BILLING</h5>
+        <button class="btn text-black rounded-0 shadow-sm mb-5"> CANCEL MEMBERSHIP</button>
+    </div>
+    <div class="col-md-9 border-bottom">
+  <div class="d-flex justify-content-between mb-2">
+    <div >student@strive.school</div>
+     <a href="#" class="text-decoration-none"> Change account email</a>
+    </div>
+    <div class="d-flex justify-content-between mb-2">
+        <div class="opacity-50">Password: ********</div>
+         <a href="#" class="text-decoration-none"> Change password</a>
+    </div>
+    <div class="d-flex justify-content-between mb-3">
+        <div class="opacity-50">Phone:  324 434 3242</div>
+        <a href="#" class="text-decoration-none"> Change phone number</a>
+    </div>      
+</div>
+
+
+<div class="col-md-9 offset-md-3 mt-3">
+    <div class="d-flex justify-content-between mb-2">
+      <div class="d-flex align-items-center">  <i class="fab fa-cc-paypal fs-2 me-3"></i>admin@strive.school</div>
+       <a href="#" class="text-decoration-none"> Update payment info</a>
+      </div>
+      <div class="d-flex justify-content-end mb-2 border-bottom">
+           <a href="#" class="text-decoration-none mb-3"> Billing details</a>
+      </div>
+      <div class="d-flex justify-content-end mb-3 my-3">
+          <a href="#" class="text-decoration-none"> Redeem gift card</a>
+      </div>    
+      <div class="d-flex justify-content-end mb-3 my-3">
+        <a href="#" class="text-decoration-none"> Where to buy gift card</a>
+    </div>     
+  </div>
+</div>
+
+
+
+
+<div class="plan-details row border-bottom pt-2">
+    <div class="col-md-3">
+        <h5 class="m-0 opacity-50 mb-5 mb-md-0">PLAN DETAILS</h5>
+
+    </div>
+    <div class="col-md-9">
+  <div class="d-flex justify-content-between mb-2">
+    <div class="d-flex align-items-center">Premium <i class="bi bi-badge-hd fs-3 ps-3"></i></div>
+     <a href="#" class="text-decoration-none"> Change plan</a>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="settings row  border-bottom pt-2">
+    <div class="col-md-3">
+        <h5 class="m-0 opacity-50 mb-5 mb-md-0">SETTINGS</h5>
+    </div>
+    <div class="col-md-9 ">
+  <div class="d-flex justify-content-between mb-2">
+     <a href="#" class="text-decoration-none"> Parental controls</a>
+    </div>
+    <div class="d-flex justify-content-between mb-2">
+        <a href="#" class="text-decoration-none"> Test partecipation</a>
+       </div>
+       <div class="d-flex justify-content-between mb-2">
+        <a href="#" class="text-decoration-none"> Manage downloads devices</a>
+       </div>
+       <div class="d-flex justify-content-between mb-2">
+        <a href="#" class="text-decoration-none"> Activate a device</a>
+       </div>
+       <div class="d-flex justify-content-between mb-2">
+        <a href="#" class="text-decoration-none"> Recent device streaming activity</a>
+       </div>
+       <div class="d-flex justify-content-between mb-2">
+        <a href="#" class="text-decoration-none">Sign out of all devices</a>
+       </div>
+    </div>
+</div>
+
+<div class="my-profile row  pt-2 mb-5">
+    <div class="col-md-3">
+        <h5 class="m-0 opacity-50 mb-5 mb-md-0">MY PROFILE</h5>
+
+    </div>
+    <div class="col-md-9 ">
+  <div class="d-flex justify-content-between mb-2">
+    <div class="d-flex align-items-center"><img src="assets/img/avatar.png" alt="">Strive student </div>
+    <div class="d-flex flex-column"> 
+    <a href="#" class="text-decoration-none mb-1"> Manage profiles</a>
+     <a href="#" class="text-decoration-none mb-2"> Add profile email</a>
+    </div>
+    </div>
+    <div class="col-6">
+        <div class="d-flex justify-content-between mb-1">
+            <a href="#" class="text-decoration-none mb-1"> Language</a>
+            <a href="#" class="text-decoration-none mb-1"> Viewing activity</a>
+        </div>
+        <div class="d-flex justify-content-between mb-1">
+            <a href="#" class="text-decoration-none mb-1"> Playback settings</a>
+            <a href="#" class="text-decoration-none mb-1"> Ratings</a>
+        </div>
+        <a href="#" class="text-decoration-none mb-1"> Subtitle appearence</a>
+    </div>
+    </div>
+</div>
+
+
+
+
+</main>
+</div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

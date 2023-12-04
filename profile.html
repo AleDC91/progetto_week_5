@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Netflix clone, esercizio settimana 5" />
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg-netflix-bg-color">
+    <div class="container-fluid bg-netflix-bg-color">
+    <header class="bg-netflix-bg-color py-2">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-netflix-bg-color  p-0">
+        <div class="container-fluid bg-netflix-bg-color">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/img/netflix_logo.png"
+              class="img-fluid"
+              alt="netflix logo"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-sm-50 w-xxl-25 contai text-white mx-auto">
+
+        <h1 class=" mt-5 mb-4">
+            Edit Profile
+        </h1>
+        
+        <div class="membership row border-top border-bottom py-3 mb-3" >
+            <div class="col-md-3">
+                <img class="img-fluid" src="assets/img/avatar.png" alt="" width="100px">
+            </div>
+            <div class="col-md-9 ">
+            <div class="text-bg-secondary px-2 py-1 "> Strieve student</div>
+            <div class="my-3 "> 
+                Language
+                <div class="dropdown change-genre border-bottom pb-4 mt-1">
+                    <button class="btn bg-black m-0 text-white rounded-0 border-1 border-white  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      English
+                    </button>
+                    <ul class="dropdown-menu bg-netflix-bg-color border border-white border- rounded-0">
+                      <li><a class="dropdown-item text-white" href="#">lingua 1</a></li>
+                      <li><a class="dropdown-item text-white" href="#">lingua 2</a></li>
+                      <li><a class="dropdown-item text-white" href="#">lingua 3</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col border-bottom ">
+                <div class=" px-2 py-1 mb-3 fs-5"> Maturity settings:</div>
+                <div class="text-bg-dark px-2 py-1 mb-3 opacity-100 fw-bold"> ALL MATURITY RATINGS</div>
+                <div class=" px-2 py-1 fs-7 mb-3 opacity-100 "> Show  of all maturity ratings for this profile</div>
+                <button  class="btn btn-outline-secondary bg-netflix-bg-color rounded-0 px-4 py-1 fs-7 mb-3">EDIT</button>
+                
+             
+        </div>
+
+        <div class="col">
+                <div class=" px-2 py-1 fs-5 my-3">Autoplay controls</div>
+                <div class="form-check ms-4">
+                  <input class="form-check-input rounded-0 fs-3 border bg-netflix-bg-color" type="checkbox" value="" id="" checked>
+                  <label class="form-check-label fs-7" for="">
+                    Autoplay next episode in a series on all devices
+                  </label>
+                </div>
+                <div class="form-check ms-4">
+                  <input class="form-check-input  rounded-0 fs-3 border bg-netflix-bg-color" type="checkbox" value="" id="" checked>
+                  <label class="form-check-label fs-7" for="">
+                    Autoplay previews while browsing on all devices
+                  </label>
+                </div>
+                
+             
+        </div>
+
+
+        
+        </div>
+        
+        
+        
+        
+        
+        </div>
+        <div class="bottom-btns d-flex justify-content-between mb-5">
+            <a  class="btn btn-light rounded-0 px-4 fs-7" href="#" role="button">SAVE</a>
+            <a  class="btn  btn-netflix-bg-color text-secondary border-secondary rounded-0 px-4 fs-" href="#" role="button">CANCEL</a>
+            <a  class="btn  btn-netflix-bg-color text-secondary border-secondary rounded-0 px-4 fs-" href="#" role="button">DELETE PROFILE</a>
+        
+        </div>
+        
+        
+        
+        </main>
+
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

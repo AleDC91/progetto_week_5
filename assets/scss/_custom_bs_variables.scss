@@ -1,0 +1,33 @@
+// --------------------------------
+// ---------CUSTOM VARIABLES-------
+// --------------------------------
+// aggiungi qui tue variabili che sovrascriveranno quelle di Bootstrap o per aggiungerne di nuove
+
+
+$navbar-light-icon-color: white;
+
+$h7-font-size: $font-size-base * 0.875;
+$h8-font-size: $font-size-base * 0.5;
+$h9-font-size: $font-size-base * 0.25;
+
+$netflix-bg-color: #141414;
+
+
+
+// maps
+// ----
+
+$custom-colors: (
+    'netflix-bg-color': $netflix-bg-color,
+);
+
+$custom-font-sizes: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+);
+
+
+$custom-spacers: (
+  3m: $spacer * 1.25,
+);
