@@ -7,7 +7,11 @@ let next = document.querySelector("#new-releases .carousel-control-next");
 let prev = document.querySelector("#new-releases .carousel-control-prev");
 
 
+let usr = document.querySelector('.right-nav-btns .user-avatar');
 
+let src = document.querySelector('.right-nav-btns .search-nav');
+let kids = document.querySelector('.right-nav-btns .kids');
+let bell = document.querySelector('.right-nav-btns .bell');
 
 
 window.addEventListener('load' , () => {
@@ -39,6 +43,8 @@ window.addEventListener('load' , () => {
         else {
           film.style.width = `${(inner)}px`;
           film.style.height = film.style.width / 3;
+
+          
         }
         console.log(film.style.width)
       });
@@ -311,4 +317,16 @@ prev3.addEventListener('click', () => {
    
 })
 
+
+
+
+
+
+// 
+
+// window.addEventListener('resize', () => {
+//     if(inner < 450){
+//         
+//     }
+// })
 
