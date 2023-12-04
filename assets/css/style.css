@@ -12597,7 +12597,8 @@ textarea.form-control-lg {
   color: #3498db;
 }
 
-.bell, .search-nav {
+.bell,
+.search-nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12669,15 +12670,15 @@ div.head-left {
 }
 
 .carousel-control-prev {
-  width: 40px;
-  height: 40px;
-  left: -40px;
+  width: 50px;
+  height: 100%;
+  left: -25px;
 }
 
 .carousel-control-next {
-  width: 40px;
-  height: 40px;
-  right: -40px;
+  width: 50px;
+  height: 100%;
+  right: -25px;
 }
 
 .footer-links a {
@@ -12700,6 +12701,15 @@ footer {
   margin-top: 8rem;
 }
 
-.menu-right, .show-grid {
+.menu-right,
+.show-grid {
   cursor: pointer;
+}
+
+.carousel-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-inner::-moz-scrollbar {
+  display: none;
 }

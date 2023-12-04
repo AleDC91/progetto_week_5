@@ -1,13 +1,12 @@
 @use "override_bootstrap";
 
-
 .navbar {
   .nav-item {
-   &[aria-current="page"]{
-        font-weight: bold;
+    &[aria-current="page"] {
+      font-weight: bold;
     }
     a {
-        font-size: 0.9rem;
+      font-size: 0.9rem;
       color: white;
       opacity: 0.8;
       &:hover {
@@ -18,144 +17,148 @@
   }
 }
 
-
-.navbar-brand{
-    width: 120px;
-}
-
-.right-nav-btns{
-    height: 50px;
-}
-.user-avatar{
-    height: 30px;
-    width: 30px;
-    margin-left: 0.8rem;
-    margin-right: 1.5rem;
-}
-.bell{
-    height: 40px;
-    width: 40px
-}
-
-
-.custom-icon-color {
-    color: #3498db;
-  }
-.bell, .search-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    color: white;
-}
-
-.dropdown-item{
-    margin-left: 0 ;
-    i{
-        padding: 0 0.5rem
-    }
-}
-
-a.dropdown-item{
-    margin: 0;
+.navbar-brand {
+  width: 120px;
 }
 
 .right-nav-btns {
-    a{
-        text-decoration: none;
-        color: white;
-        padding: 0 0.8rem;
-    }
+  height: 50px;
+}
+.user-avatar {
+  height: 30px;
+  width: 30px;
+  margin-left: 0.8rem;
+  margin-right: 1.5rem;
+}
+.bell {
+  height: 40px;
+  width: 40px;
 }
 
-.right-nav-btns{
+.custom-icon-color {
+  color: #3498db;
+}
+.bell,
+.search-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.dropdown-item {
+  margin-left: 0;
+  i {
+    padding: 0 0.5rem;
+  }
+}
+
+a.dropdown-item {
+  margin: 0;
+}
+
+.right-nav-btns {
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 0 0.8rem;
+  }
+}
+
+.right-nav-btns {
+  right: 20px;
+  top: 10px;
+  @media screen and (min-width: 992px) {
     right: 20px;
-    top:10px;
-    @media screen and (min-width: 992px) {
-        right: 20px
-    }
+  }
 }
 
 .dropdown-menu {
-    .user{
-        width: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .user-avatar{
-        margin: 0;
-        padding: 0
-    };
-}
-
-.head-right{
-    div{
-        box-sizing: border-box;
-        width: 40px;
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-div.head-left{
-    padding-right: 0 ;
-}
-.change-genre{
+  .user {
+    width: 40px;
     display: flex;
-
-    button{
-        font-size: 0.9rem;
-        font-weight: 500;        
-        padding:0.1rem 0.5rem;
-        width: 100px;
-        margin: auto 2rem;
-
-    }
+    align-items: center;
+    justify-content: center;
+  }
+  .user-avatar {
+    margin: 0;
+    padding: 0;
+  }
 }
 
+.head-right {
+  div {
+    box-sizing: border-box;
+    width: 40px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
+div.head-left {
+  padding-right: 0;
+}
+.change-genre {
+  display: flex;
+
+  button {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.1rem 0.5rem;
+    width: 100px;
+    margin: auto 2rem;
+  }
+}
 
 .carousel-control-prev {
-width: 40px;
-height: 40px;
-    left: -40px;
-  }
-  
-  .carousel-control-next {
-    width: 40px;
-    height: 40px;
-    right: -40px;
-  }
+  width: 50px;
+  height: 100%;
+  left: -25px;
+}
 
-  .footer-links{
-    a{
-        color: white;
-        &:hover{
-            opacity: 0.7;
-        }
+.carousel-control-next {
+  width: 50px;
+  height: 100%;
+  right: -25px;
+}
+
+.footer-links {
+  a {
+    color: white;
+    &:hover {
+      opacity: 0.7;
     }
   }
+}
 
-  .membership button{
-    background-color: rgb(224, 224, 224);
+.membership button {
+  background-color: rgb(224, 224, 224);
+}
+
+.my-profile {
+  img {
+    width: 35px;
+    margin-right: 1rem;
   }
+}
 
-  .my-profile{
-    img{
-        width: 35px;
-        margin-right: 1rem;
+footer {
+  margin-top: 8rem;
+}
 
-    }
-  }
+.menu-right,
+.show-grid {
+  cursor: pointer;
+}
 
-  footer{
-    margin-top: 8rem;
-  }
+.carousel-inner::-webkit-scrollbar {
+  display: none;
+}
 
-  .menu-right, .show-grid{
-    cursor: pointer;
-  }
+.carousel-inner::-moz-scrollbar {
+  display: none; 
+}
